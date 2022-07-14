@@ -20,7 +20,7 @@
 #' level=polynomial_block(order=1,values=1,D=1/0.95)
 #' season=harmonic_block(period=40,values=1,D=1/0.98)
 #'
-#' fitted_data=fit_model(level,season,data_out=y,kernel='Poisson')
+#' fitted_data=fit_model(level,season,data_out=y,kernel='poisson_lb')
 #' show_fit(fitted_data,smooth = TRUE)$plot
 fit_model <- function(...,data_out,kernel,offset=data_out**0,parms=list()){
   if(typeof(kernel)==typeof('kernel')){

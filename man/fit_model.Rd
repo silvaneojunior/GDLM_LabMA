@@ -31,6 +31,6 @@ y=rpois(T,20*(sin(w*1:T/T)+2))
 level=polynomial_block(order=1,values=1,D=1/0.95)
 season=harmonic_block(period=40,values=1,D=1/0.98)
 
-fitted_data=fit_model(level,season,data_out=y,kernel='Poisson')
+fitted_data=fit_model(level,season,data_out=y,kernel='poisson_lb')
 show_fit(fitted_data,smooth = TRUE)$plot
 }

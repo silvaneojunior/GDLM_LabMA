@@ -22,7 +22,7 @@ The fitted model (an object of the <undefined class> or list). Contains the valu
 Fit a model given it's structure and the observed data. This function can be used for any kernel.
 }
 \examples{
-library(GDLM_LabMA)
+library(GDLMLabMA)
 
 # Poisson case
 w=(200/40)*2*pi

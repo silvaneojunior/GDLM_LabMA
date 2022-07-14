@@ -11,7 +11,7 @@
 #' @export
 #'
 #' @examples
-#' library(GDLM_LabMA)
+#' library(GDLMLabMA)
 #'
 #' # Poisson case
 #' w=(200/40)*2*pi

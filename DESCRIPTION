@@ -1,4 +1,4 @@
-Package: GDLM
+Package: GDLM_LabMA
 Type: Package
 Title: GDLM: an R package for Bayesian analysis of Generialized Dynamic Linear Models
 Version: 0.1.0

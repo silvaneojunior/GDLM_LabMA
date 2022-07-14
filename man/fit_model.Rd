@@ -22,25 +22,7 @@ The fitted model (an object of the <undefined class> or list). Contains the valu
 Fit a model given it's structure and the observed data. This function can be used for any kernel.
 }
 \examples{
-library(GDLM)
-
-Normal case
-T=200
-mu=rnorm(T,0,0.1)
-y=rnorm(T,cumsum(mu))
-
-level=polynomial_block(order=1,
-                       values=c(1,0),
-                       D=1/0.98)
-variance=polynomial_block(order=1,
-                          values=c(0,1),
-                          D=1/1)
-
-fitted_data=fit_model(level,variance,data_out=matrix(c(y,rep(0,T)),T,2),kernel='Normal')
-show_fit(fitted_data,smooth = TRUE)$plot
-
-plot(fitted_data$mt[1,])
-lines(fitted_data$mts[1,])
+library(GDLM_LabMA)
 
 # Poisson case
 w=(200/40)*2*pi
@@ -50,18 +32,5 @@ level=polynomial_block(order=1,values=1,D=1/0.95)
 season=harmonic_block(period=40,values=1,D=1/0.98)
 
 fitted_data=fit_model(level,season,data_out=y,kernel='Poisson')
-show_fit(fitted_data,smooth = TRUE)$plot
-
-# Gamma case
-T=200
-w=(200/40)*2*pi
-phi=2.5
-y= matrix(rgamma(T,phi,phi/20*(sin(w*1:T/T)+2)),T,1)
-
-level=polynomial_block(order=1,values=1,D=1/0.95)
-season=harmonic_block(period=40,values=1,D=1/0.98)
-
-fitted_data=fit_model(level,season,data_out=y,kernel='Gamma',parms=list('phi'=phi))
-
 show_fit(fitted_data,smooth = TRUE)$plot
 }

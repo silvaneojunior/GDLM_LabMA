@@ -105,8 +105,8 @@ poisson_filter = function(y,m0,C0,FF,G,D,W,offset=1,parms=list()){
 
   # Compatibilizing posterior
 
-    gt <- log(a.post/b.post) + 1/(2*a.post)
-    pt <- (2*a.post-1)/(2*a.post^2)
+  gt <- log(a.post/b.post) + 1/(2*a.post)
+  pt <- (2*a.post-1)/(2*a.post^2)
 
   mt <- at+reduc_RFF*as.vector((gt-ft)*(1/(qt)))
   if(length(qt)>1){

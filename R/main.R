@@ -14,6 +14,7 @@
 #' library(GDLMLabMA)
 #'
 #' # Poisson case
+#' T=200
 #' w=(200/40)*2*pi
 #' y=rpois(T,20*(sin(w*1:T/T)+2))
 #'

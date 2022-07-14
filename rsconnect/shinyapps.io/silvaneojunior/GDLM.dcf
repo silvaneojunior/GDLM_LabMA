@@ -1,0 +1,14 @@
+name: GDLM
+title: GDLM
+username:
+account: silvaneojunior
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 6314587
+bundleId: 5913263
+url: https://silvaneojunior.shinyapps.io/GDLM/
+when: 1652745127.84042
+lastSyncTime: 1652745127.84042
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: codigo_varicela.R|man/hello.Rd|test.rmd

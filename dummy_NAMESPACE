@@ -1,0 +1,13 @@
+exportPattern("^[[:alpha:]]+")
+# Plotting stuff
+import(ggplot2)
+import(plotly)
+
+# Manipulation  stuff
+importFrom(Matrix,bdiag)
+import(tidyr)
+import(dplyr)
+
+# Math stuff
+importFrom(rootSolve, multiroot)
+importFrom(MASS, ginv)
